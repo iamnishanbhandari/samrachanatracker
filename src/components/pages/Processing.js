@@ -32,7 +32,7 @@ const Processing = () => {
           </div>
 
           <div>
-            <button class="bg-gray-800 text-white w-52 m-2 py-2 rounded-xl w-80">
+            <button class="bg-gray-800 text-white m-2 py-2 px-2 rounded-xl w-80">
               Add Batch
             </button>
           </div>
@@ -41,7 +41,7 @@ const Processing = () => {
 
       <div>
         <div>
-          <button class="border border-gray-600 h-14 rounded-md flex w-32 mx-20 my-24">
+          <button class=" outline-none h-14 rounded-md flex w-32 mx-20 my-24 p-1 bg-blue-900 text-white font-semi-bold ">
             {" "}
             Show Transcactions
           </button>
