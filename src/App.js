@@ -6,6 +6,7 @@ import SeedCetificationAuthority from "./components/pages/SeedCetificationAuthor
 import SeedProducingAgency from "./components/pages/SeedProducingAgency";
 import Registration from "./components/registration/Registration";
 import Signin from "./components/signin/Signin";
+import Dashboard from "./components/dashboard/Dashboard";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
         {/* <SeedCetificationAuthority /> */}
         {/* <SeedProducingAgency /> */}
         {/* <Registration /> */}
-        <Signin />
+        {/* <Signin /> */}
+        <Dashboard />
       </div>
     </>
   );
