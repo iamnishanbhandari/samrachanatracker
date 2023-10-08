@@ -4,6 +4,8 @@ import Processing from "./components/pages/Processing";
 import SeedGrowth from "./components/pages/SeedGrowth";
 import SeedCetificationAuthority from "./components/pages/SeedCetificationAuthority";
 import SeedProducingAgency from "./components/pages/SeedProducingAgency";
+import Registration from "./components/registration/Registration";
+import Signin from "./components/signin/Signin";
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
         {/* <Processing /> */}
         {/* <SeedGrowth /> */}
         {/* <SeedCetificationAuthority /> */}
-        <SeedProducingAgency />
+        {/* <SeedProducingAgency /> */}
+        {/* <Registration /> */}
+        <Signin />
       </div>
     </>
   );
