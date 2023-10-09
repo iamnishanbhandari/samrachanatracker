@@ -4,7 +4,6 @@ import NavBar from "../navbar/NavBar";
 const Distributor = () => {
   return (
     <>
-      return (
       <>
         <NavBar />
         <div class="flex justify-center mt-32 bg-#F7EEF3">

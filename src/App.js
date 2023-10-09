@@ -6,24 +6,50 @@ import SeedCetificationAuthority from "./components/pages/SeedCetificationAuthor
 import SeedProducingAgency from "./components/pages/SeedProducingAgency";
 import Registration from "./components/registration/Registration";
 import Signin from "./components/signin/Signin";
-import Dashboard from "./components/dashboard/Dashboard";
 import Consumer from "./components/consumer/Consumer";
+import Lab from "./components/pages/Lab";
+import Distributor from "./components/pages/Distributor";
+import Dashboard from "./components/dashboard/Dashboard";
 import SideBar from "./components/pages/SideBar";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <div class="bg-gray-10 h-auto">
-        {/* <NavBar /> */}
-        {/* <Processing /> */}
-        {/* <SeedGrowth /> */}
-        {/* <SeedCetificationAuthority /> */}
-        {/* <SeedProducingAgency /> */}
-        {/* <Registration /> */}
-        {/* <Signin /> */}
-        <Dashboard />
-        {/* <Consumer /> */}
-        {/* <SideBar /> */}
+        <Router>
+          <Routes>
+            <Route path="/Processing" element={<Processing />} />
+            <Route path="/SeedGrowth" element={<SeedGrowth />} />
+            <Route
+              path="/SeedCetificationAuthority"
+              element={<SeedCetificationAuthority />}
+            />
+            <Route
+              path="/SeedProducingAgency"
+              element={<SeedProducingAgency />}
+            />
+            <Route path="/Signin" element={<Signin />} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/Consumer" element={<Consumer />} />
+            <Route path="/Lab" element={<Lab />} />
+            <Route path="/Distributor" element={<Distributor />} />
+
+            {/* <Route path="/processing" element={<Processing />} /> */}
+
+            {/* <NavBar /> */}
+            {/* <Processing /> */}
+            {/* <SeedGrowth /> */}
+            {/* <SeedCetificationAuthority /> */}
+            {/* <SeedProducingAgency /> */}
+            {/* <Registration /> */}
+            {/* <Signin /> */}
+            {/* <Dashboard /> */}
+            {/* <Consumer /> */}
+            {/* <SideBar /> */}
+          </Routes>
+        </Router>
       </div>
     </>
   );

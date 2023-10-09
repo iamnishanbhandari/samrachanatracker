@@ -8,6 +8,8 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import NavBar from "../navbar/NavBar";
 import { Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import Distributor from "../pages/Distributor";
 
 const Dashboard = () => {
   function createData(name, calories, fat, carbs, protein) {
@@ -37,92 +39,104 @@ const Dashboard = () => {
               }}
             >
               <Box>
-                <Button
-                  sx={{
-                    // border: "1px solid gray",
-                    // boxShadow:
-                    // "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
-                    boxShadow:
-                      "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
-                    height: "60px",
-                    mt: "0px",
-                    width: "100%",
-                    // color: "black",
-                    // fontSize: "15px",
-                  }}
-                >
-                  Seed Producing Agency
-                </Button>
-                <Button
-                  sx={{
-                    // border: "1px solid gray",
-                    boxShadow:
-                      "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
-                    // boxShadow:
-                    //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
-                    height: "60px",
-                    width: "100%",
-                    mt: "15px",
-                  }}
-                >
-                  Seed Growth
-                </Button>{" "}
-                <Button
-                  sx={{
-                    // border: "1px solid gray",
-                    boxShadow:
-                      "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
-                    // boxShadow:
-                    //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
-                    height: "60px",
-                    width: "100%",
-                    mt: "15px",
-                  }}
-                >
-                  Seed Cetification Authority
-                </Button>{" "}
-                <Button
-                  sx={{
-                    // border: "1px solid gray",
-                    // boxShadow:
-                    //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
-                    boxShadow:
-                      "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
-                    height: "60px",
-                    width: "100%",
-                    mt: "15px",
-                  }}
-                >
-                  Lab
-                </Button>{" "}
-                <Button
-                  sx={{
-                    // border: "1px solid gray",
-                    // boxShadow:
-                    //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
-                    boxShadow:
-                      "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
-                    height: "60px",
-                    width: "100%",
-                    mt: "15px",
-                  }}
-                >
-                  Processing
-                </Button>{" "}
-                <Button
-                  sx={{
-                    // border: "1px solid gray",
-                    boxShadow:
-                      "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
-                    // boxShadow:
-                    //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
-                    height: "60px",
-                    width: "100%",
-                    mt: "15px",
-                  }}
-                >
-                  Distributor
-                </Button>{" "}
+                <Link to={"/SeedProducingAgency"}>
+                  <Button
+                    sx={{
+                      boxShadow:
+                        "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
+                      height: "60px",
+                      mt: "0px",
+                      width: "100%",
+                    }}
+                  >
+                    Seed Producing Agency
+                  </Button>
+                </Link>
+
+                <Link to={"/SeedGrowth"}>
+                  <Button
+                    sx={{
+                      // border: "1px solid gray",
+                      boxShadow:
+                        "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
+                      // boxShadow:
+                      //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
+                      height: "60px",
+                      width: "100%",
+                      mt: "15px",
+                    }}
+                  >
+                    Seed Growth
+                  </Button>{" "}
+                </Link>
+
+                <Link to={"/SeedCetificationAuthority"}>
+                  <Button
+                    sx={{
+                      // border: "1px solid gray",
+                      boxShadow:
+                        "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
+                      // boxShadow:
+                      //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
+                      height: "60px",
+                      width: "100%",
+                      mt: "15px",
+                    }}
+                  >
+                    Seed Cetification Authority
+                  </Button>{" "}
+                </Link>
+
+                <Link to={"/Lab"}>
+                  <Button
+                    sx={{
+                      // border: "1px solid gray",
+                      // boxShadow:
+                      //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
+                      boxShadow:
+                        "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
+                      height: "60px",
+                      width: "100%",
+                      mt: "15px",
+                    }}
+                  >
+                    Lab
+                  </Button>{" "}
+                </Link>
+
+                <Link to={"/Processing"}>
+                  <Button
+                    sx={{
+                      // border: "1px solid gray",
+                      // boxShadow:
+                      //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
+                      boxShadow:
+                        "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
+                      height: "60px",
+                      width: "100%",
+                      mt: "15px",
+                    }}
+                  >
+                    Processing
+                  </Button>{" "}
+                </Link>
+
+                <Link to={"/Distributor"}>
+                  <Button
+                    sx={{
+                      // border: "1px solid gray",
+                      boxShadow:
+                        "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
+                      // boxShadow:
+                      //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
+                      height: "60px",
+                      width: "100%",
+                      mt: "15px",
+                    }}
+                  >
+                    Distributor
+                  </Button>{" "}
+                </Link>
               </Box>
             </Box>
             <div class="flex flex-col justify-center bg-gray-50  align-center my-auto border  h-[81vh] w-[100vw]">
