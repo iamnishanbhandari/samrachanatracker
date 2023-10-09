@@ -7,6 +7,7 @@ import SeedProducingAgency from "./components/pages/SeedProducingAgency";
 import Registration from "./components/registration/Registration";
 import Signin from "./components/signin/Signin";
 import Dashboard from "./components/dashboard/Dashboard";
+import Consumer from "./components/consumer/Consumer";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         {/* <SeedProducingAgency /> */}
         {/* <Registration /> */}
         {/* <Signin /> */}
-        <Dashboard />
+        {/* <Dashboard /> */}
+        <Consumer />
       </div>
     </>
   );
