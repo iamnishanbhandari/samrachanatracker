@@ -20,8 +20,8 @@ const App = () => {
         {/* <SeedProducingAgency /> */}
         {/* <Registration /> */}
         {/* <Signin /> */}
-        {/* <Dashboard /> */}
-        <Consumer />
+        <Dashboard />
+        {/* <Consumer /> */}
       </div>
     </>
   );

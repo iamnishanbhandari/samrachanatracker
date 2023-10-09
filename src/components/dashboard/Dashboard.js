@@ -25,14 +25,14 @@ const Dashboard = () => {
     <>
       <div>
         <NavBar />
-        <div class="flex flex-col justify-center align-center my-auto border border-gray-700 h-[100vh]">
-          <div class="border border-green-800 h-96 items-center flex justify-center">
+        <div class="flex flex-col justify-center bg-gray-50  align-center my-auto border border-gray-700 h-[100vh]">
+          <div class=" h-56 items-center flex justify-center">
             <div class="flex  justify-evenly  w-[100%] gap-10">
-              <div class="border border-gray-800 p-6 w-96">
+              <div class="shadow-custom p-6 mb-6 bg-white rounded-md  w-96">
                 <div> Total Roles</div>
                 <div> 5</div>
               </div>
-              <div class="border border-gray-800 p-6 w-96">
+              <div class="shadow-custom p-6 mb-6 bg-white rounded-md  w-96">
                 <div> Total Batches</div>
                 <div> 15</div>
               </div>
@@ -41,7 +41,7 @@ const Dashboard = () => {
 
           <div class="border  h-96 flex my-auto mx-auto flex-col ">
             <div>
-              <button class=" outline-none h-14 rounded-md my-4 mx-4 bg-blue-900 text-white font-semi-bold ">
+              <button class=" outline-none h-14 rounded-md my-4 mx-4 p-4 bg-blue-900 text-white font-semi-bold ">
                 {" "}
                 Show Transcactions
               </button>
