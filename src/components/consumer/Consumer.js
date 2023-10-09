@@ -1,10 +1,12 @@
 import React from "react";
 import NavBar from "../navbar/NavBar";
+import SideBar from "../pages/SideBar";
 
 const Consumer = () => {
   return (
     <>
       <NavBar />
+
       <div class="flex justify-evenly  h-[100vh] ">
         <div class="shadow-lg p-6 mb-6 bg-white rounded-md w-96 justify-center h-96  text-center items-center pt-28 ">
           <div>
