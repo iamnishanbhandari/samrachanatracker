@@ -1,88 +1,82 @@
 import React from "react";
 import NavBar from "../navbar/NavBar";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
 
 const Registration = () => {
   return (
-    <>
-      <NavBar />
-      <div class="flex justify-center mt-32 bg-#F7EEF3">
-        <div class=" flex flex-col justify-center w-96 h-80 rounded-xl">
-          <div>
-            <h1 class="font-bold text-2xl pl-20 ">Add User</h1>
-          </div>
-          <div>
-            <input
-              type="text"
-              class="border border-gray-300 px-2 py-4 m-2 w-80 rounded-md focus:outline-none focus:ring focus:border-blue-500  "
-              placeholder="Enter Tag no "
-            ></input>
-          </div>
+    <div className="bg-gray-50 py-10">
+      <div className=" flex flex-col justify-center mx-auto lg:w-1/2 border p-5 bg-white rounded-xl">
+        <div className="">
+          <h1 className="font-bold text-2xl text-left w-full mb-4">Add User</h1>
+        </div>
+        <div>
+          <input
+            type="text"
+            className="border border-gray-300 px-2 py-4 my-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-500  "
+            placeholder="Enter Tag no "
+          ></input>
+        </div>
 
-          <div>
-            <input
-              type="text"
-              class="border border-gray-300 px-2 py-4 m-2 w-80 rounded-md focus:outline-none focus:ring focus:border-blue-500  "
-              placeholder="Enter Tag no "
-            ></input>
-          </div>
+        <div>
+          <input
+            type="text"
+            className="border border-gray-300 px-2 py-4 my-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-500  "
+            placeholder="Enter Name of User "
+          ></input>
+        </div>
 
-          <div class="flex flex-col space-y-4 my-2">
-            <h2>Select User Type</h2>
-            <label class="flex items-center">
-              <input
-                type="checkbox"
-                class="form-checkbox h-5 w-5 text-blue-600"
-              ></input>{" "}
-              <span class="ml-2">Seed Producing Agency</span>
-            </label>
-            <label class="flex items-center">
-              <input
-                type="checkbox"
-                class="form-checkbox h-5 w-5 text-blue-600"
+        <div className="flex flex-col space-y-4 my-2">
+          <FormControl>
+            <FormLabel id="demo-radio-buttons-group-label">
+              {" "}
+              <h2>Select User Type</h2>
+            </FormLabel>
+            <RadioGroup
+              aria-labelledby="demo-radio-buttons-group-label"
+              defaultValue="Seed Producing Agency"
+              name="radio-buttons-group"
+            >
+              <FormControlLabel
+                value="Seed Producing Agency"
+                control={<Radio />}
+                label="Seed Producing Agency"
               />
-              <span class="ml-2">Seed Grower</span>
-            </label>
-            <label class="flex items-center">
-              <input
-                type="checkbox"
-                class="form-checkbox h-5 w-5 text-blue-600"
+              <FormControlLabel
+                value="Seed Grower"
+                control={<Radio />}
+                label="Seed Grower"
               />
-              <span class="ml-2">Seed Processor</span>
-            </label>
-
-            <label class="flex items-center">
-              <input
-                type="checkbox"
-                class="form-checkbox h-5 w-5 text-blue-600"
+              <FormControlLabel
+                value="Seed Processor"
+                control={<Radio />}
+                label="Seed Processor"
               />
-              <span class="ml-2">Lab</span>
-            </label>
-
-            <label class="flex items-center">
-              <input
-                type="checkbox"
-                class="form-checkbox h-5 w-5 text-blue-600"
+              <FormControlLabel value="Lab" control={<Radio />} label="Lab" />
+              <FormControlLabel
+                value="Seed Certification Authority"
+                control={<Radio />}
+                label="Seed Certification Authority"
               />
-              <span class="ml-2">Seed Certification Authority</span>
-            </label>
-
-            <label class="flex items-center">
-              <input
-                type="checkbox"
-                class="form-checkbox h-5 w-5 text-blue-600"
+              <FormControlLabel
+                value="Distributor"
+                control={<Radio />}
+                label="Distributor"
               />
-              <span class="ml-2">Distributor</span>
-            </label>
-          </div>
+            </RadioGroup>
+          </FormControl>
+        </div>
 
-          <div>
-            <button class="bg-gray-800 text-white m-2 my-6 py-2 px-2 rounded-xl w-80">
-              Create User
-            </button>
-          </div>
+        <div>
+          <button className="bg-gray-300 text-white w-full my-6 py-4 px-8 rounded-xl">
+            Create User
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

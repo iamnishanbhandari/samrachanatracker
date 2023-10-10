@@ -17,8 +17,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-      <div class="bg-gray-10 h-auto">
+      <div className="bg-gray-50 h-full">
         <Router>
+          <NavBar />
           <Routes>
             <Route path="/Processing" element={<Processing />} />
             <Route path="/SeedGrowth" element={<SeedGrowth />} />
