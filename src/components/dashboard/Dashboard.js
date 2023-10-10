@@ -29,6 +29,7 @@ const Dashboard = () => {
       <div>
         <div>
           <NavBar />
+          {/* SideBar */}
           <div style={{ display: "flex", marginLeft: "5px" }}>
             <Box
               sx={{
@@ -137,23 +138,40 @@ const Dashboard = () => {
                     Distributor
                   </Button>{" "}
                 </Link>
+
+                <Link to={"/Consumer"}>
+                  <Button
+                    sx={{
+                      // border: "1px solid gray",
+                      boxShadow:
+                        "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
+                      // boxShadow:
+                      //   "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px ",
+                      height: "60px",
+                      width: "100%",
+                      mt: "15px",
+                    }}
+                  >
+                    Consumer
+                  </Button>{" "}
+                </Link>
               </Box>
             </Box>
             <div class="flex flex-col justify-center bg-gray-50  align-center my-auto border  h-[81vh] w-[100vw]">
-              <div class=" h-56 items-center flex justify-center">
-                <div class="flex  justify-evenly  w-[100%] gap-10">
-                  <div class="shadow-custom p-6 mb-6 bg-white rounded-md  w-96">
+              <div class=" h-40  flex justify-center">
+                <div class="flex  justify-evenly  w-[100%] gap-10 m-5">
+                  <div class="shadow-custom p-6 mb-6 border border-navy-950 bg-white rounded-md  w-96">
                     <div> Total Roles</div>
                     <div> 5</div>
                   </div>
-                  <div class="shadow-custom p-6 mb-6 bg-white rounded-md  w-96">
+                  <div class="shadow-custom p-6 mb-6 border border-navy-950 bg-white rounded-md  w-96">
                     <div> Total Batches</div>
                     <div> 15</div>
                   </div>
                 </div>
               </div>
 
-              <div class="border  h-96 flex my-auto mx-auto flex-col ">
+              <div class="border  h-96 flex my-auto mx-auto flex-col mt-[-10px] ">
                 <div>
                   <button class=" outline-none h-14 rounded-md my-4 mx-4 p-4 bg-blue-900 text-white font-semi-bold ">
                     {" "}
