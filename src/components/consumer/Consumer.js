@@ -1,8 +1,4 @@
 import React from "react";
-import NavBar from "../navbar/NavBar";
-import SideBar from "../pages/SideBar";
-import { Box, Button } from "@mui/material";
-import { Link } from "react-router-dom";
 import CheckIcon from "@mui/icons-material/Check";
 
 const Consumer = () => {

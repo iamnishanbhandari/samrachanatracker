@@ -10,7 +10,6 @@ import Consumer from "./components/consumer/Consumer";
 import Lab from "./components/pages/Lab";
 import Distributor from "./components/pages/Distributor";
 import Dashboard from "./components/dashboard/Dashboard";
-import SideBar from "./components/pages/SideBar";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

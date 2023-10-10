@@ -1,7 +1,4 @@
 import React from "react";
-import NavBar from "../navbar/NavBar";
-import { Box, Button } from "@mui/material";
-import { Link } from "react-router-dom";
 
 const Signin = () => {
   return (

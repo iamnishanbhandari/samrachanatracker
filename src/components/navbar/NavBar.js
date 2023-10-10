@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Box, Button, Stack } from "@mui/material";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Distributor from "../pages/Distributor";
 const NavBar = () => {
   let [open, setOpen] = useState(false);
   const AllLinks = [

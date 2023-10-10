@@ -6,9 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import NavBar from "../navbar/NavBar";
-import { Box, Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
 
 const SeedGrowth = () => {
   function createData(name, calories, fat, carbs, protein) {

@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../navbar/NavBar";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
