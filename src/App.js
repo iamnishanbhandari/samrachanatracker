@@ -10,15 +10,15 @@ import Consumer from "./components/consumer/Consumer";
 import Lab from "./components/pages/Lab";
 import Distributor from "./components/pages/Distributor";
 import Dashboard from "./components/dashboard/Dashboard";
-import SideBar from "./components/pages/SideBar";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <div class="bg-gray-10 h-auto">
+      <div className="bg-gray-50 h-full">
         <Router>
+          <NavBar />
           <Routes>
             <Route path="/Processing" element={<Processing />} />
             <Route path="/SeedGrowth" element={<SeedGrowth />} />
